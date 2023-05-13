@@ -2,12 +2,13 @@
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using MimeKit;
+using sendmail.Interfaces;
 using sendmail.Model;
 
 namespace sendmail.Services
 {
    
-    public class MailService:IMailService
+    public class MailService : IMailSendService
     {
         private readonly MailSettings _mailSettings;
         public MailService(MailSettings mailSettings)
@@ -17,7 +18,7 @@ namespace sendmail.Services
         public async Task SendEmailAsync(MailRequest mailRequest)
         {
             var email = new MimeMessage();
-            email.Sender = MailboxAddress.Parse(_mailSettings.mail);
+            email.Sender = MailboxAddress.Parse(_mailSettings.Mail);
             email.To.Add(MailboxAddress.Parse(mailRequest.ToEmail));
             email.Subject=mailRequest.Subject;
             var builder = new BodyBuilder();
