@@ -8,10 +8,10 @@ using sendmail.Model;
 namespace sendmail.Services
 {
    
-    public class MailService : IMailSendService
+    public class MailSendService : IMailSendService
     {
         private readonly MailSettings _mailSettings;
-        public MailService(MailSettings mailSettings)
+        public MailSendService(MailSettings mailSettings)
         {
             _mailSettings= mailSettings;
         }

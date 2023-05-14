@@ -26,9 +26,6 @@ namespace sendmail.Controllers
                 throw ex;
             }
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+       
     }
 }
