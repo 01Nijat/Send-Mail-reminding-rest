@@ -1,6 +1,7 @@
 ﻿using MailKit;
 using MailKit.Net.Smtp;
 using MailKit.Security;
+using Microsoft.Extensions.Options;
 using MimeKit;
 using sendmail.Interfaces;
 using sendmail.Model;
@@ -11,9 +12,9 @@ namespace sendmail.Services
     public class MailSendService : IMailSendService
     {
         private readonly MailSettings _mailSettings;
-        public MailSendService(MailSettings mailSettings)
+        public MailSendService(IOptions<MailSettings> mailSettings)
         {
-            _mailSettings= mailSettings;
+            _mailSettings= mailSettings.Value;
         }
         public async Task SendEmailAsync(MailRequest mailRequest)
         {

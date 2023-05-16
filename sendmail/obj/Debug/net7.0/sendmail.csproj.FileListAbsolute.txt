@@ -31,3 +31,7 @@ C:\Users\ASUS\source\repos\sendmail\sendmail\obj\Debug\net7.0\refint\sendmail.dl
 C:\Users\ASUS\source\repos\sendmail\sendmail\obj\Debug\net7.0\sendmail.pdb
 C:\Users\ASUS\source\repos\sendmail\sendmail\obj\Debug\net7.0\sendmail.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\sendmail\sendmail\obj\Debug\net7.0\ref\sendmail.dll
+C:\Users\ASUS\source\repos\sendmail\sendmail\bin\Debug\net7.0\MailKit.dll
+C:\Users\ASUS\source\repos\sendmail\sendmail\bin\Debug\net7.0\MimeKit.dll
+C:\Users\ASUS\source\repos\sendmail\sendmail\bin\Debug\net7.0\NETCore.MailKit.dll
+C:\Users\ASUS\source\repos\sendmail\sendmail\bin\Debug\net7.0\BouncyCastle.Crypto.dll
