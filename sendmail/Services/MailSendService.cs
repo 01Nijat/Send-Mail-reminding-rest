@@ -9,7 +9,7 @@ using sendmail.Model;
 namespace sendmail.Services
 {
    
-    public class MailSendService : IMailSendService
+    public class MailSendService :IMailSendService
     {
         private readonly MailSettings _mailSettings;
         public MailSendService(IOptions<MailSettings> mailSettings)
